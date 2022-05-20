@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --Bg-color:#eaf4f4;
+    --btn-color:#2ec4b6;
+}
+
+body {
+    background-color: var(--Bg-color);
+    font-family: 'Roboto Flex', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    margin: 1rem ;
+}
+
+.currency {
+    display: flex;
+    gap: 10rem;
+    margin: 2rem 0;
+}
+
+#currency-one,#currency-two {
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+}
+
+input[type = "number"]{
+    border: none;
+    padding: 0 0.5rem;
+}
+
+.swap-rate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-left: -3rem;
+    box-shadow: 1.5px 3px 0 hsla(208, 7%, 46%,0.5);
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.btn:active{
+    transform: translateX(1px) translateY(1px);
+    box-shadow: 0 0 0 white;
+}
+
+.swap-rate-container .rate {
+    margin-left: 10rem;
+    color: #023047;
+}
+
